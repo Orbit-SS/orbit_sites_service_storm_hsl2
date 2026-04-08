@@ -230,15 +230,16 @@ const CSS = `
   padding: 40px 0;
   border-top: 1px solid rgba(232,232,232,0.07);
   align-items: start;
-  opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
 }
 
-.m-svc-row.m-in { opacity: 1; transform: translateY(0); }
-.m-svc-row:nth-child(2) { transition-delay: 0.1s; }
-.m-svc-row:nth-child(3) { transition-delay: 0.2s; }
-.m-svc-row:nth-child(4) { transition-delay: 0.3s; }
+@keyframes mRevealRow {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.m-svc-row.m-in { animation: mRevealRow 0.7s ease both; }
+.m-svc-row.m-in:nth-child(2) { animation-delay: 0.1s; }
+.m-svc-row.m-in:nth-child(3) { animation-delay: 0.2s; }
+.m-svc-row.m-in:nth-child(4) { animation-delay: 0.3s; }
 
 .m-svc-num {
   font-size: 13px;
@@ -287,15 +288,16 @@ const CSS = `
 .m-stat {
   background: #0A0A0A;
   padding: 40px 32px;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
 }
 
-.m-stat.m-in { opacity: 1; transform: translateY(0); }
-.m-stat:nth-child(2) { transition-delay: 0.1s; }
-.m-stat:nth-child(3) { transition-delay: 0.2s; }
-.m-stat:nth-child(4) { transition-delay: 0.3s; }
+@keyframes mRevealStat {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.m-stat.m-in { animation: mRevealStat 0.7s ease both; }
+.m-stat.m-in:nth-child(2) { animation-delay: 0.1s; }
+.m-stat.m-in:nth-child(3) { animation-delay: 0.2s; }
+.m-stat.m-in:nth-child(4) { animation-delay: 0.3s; }
 
 .m-stat-number {
   font-size: clamp(36px, 5vw, 64px);
@@ -359,14 +361,15 @@ const CSS = `
   overflow: hidden;
   background: #111;
   position: relative;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
-.m-port-item.m-in { opacity: 1; transform: translateY(0); }
-.m-port-item:nth-child(2) { transition-delay: 0.1s; }
-.m-port-item:nth-child(3) { transition-delay: 0.2s; }
+@keyframes mRevealPort {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.m-port-item.m-in { animation: mRevealPort 0.8s ease both; }
+.m-port-item.m-in:nth-child(2) { animation-delay: 0.1s; }
+.m-port-item.m-in:nth-child(3) { animation-delay: 0.2s; }
 
 .m-port-item--main { aspect-ratio: 4/5; }
 .m-port-item--sq { aspect-ratio: 1; }

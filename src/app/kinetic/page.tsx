@@ -567,15 +567,13 @@ const CSS = `
 }
 
 /* SCROLL REVEAL */
-.k-reveal {
-  opacity: 0;
-  transform: translateY(36px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
+@keyframes kRevealIn {
+  from { opacity: 0; transform: translateY(36px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
-
-.k-reveal.k-in { opacity: 1; transform: translateY(0); }
-.k-d1 { transition-delay: 0.1s; }
-.k-d2 { transition-delay: 0.2s; }
+.k-reveal.k-in { animation: kRevealIn 0.7s ease both; }
+.k-reveal.k-in.k-d1 { animation-delay: 0.1s; }
+.k-reveal.k-in.k-d2 { animation-delay: 0.2s; }
 `
 
 export default function KineticPage() {

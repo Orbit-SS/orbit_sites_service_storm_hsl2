@@ -590,16 +590,14 @@ const CSS = `
 }
 
 /* REVEAL */
-.lx-reveal {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 0.9s cubic-bezier(0.16,1,0.3,1), transform 0.9s cubic-bezier(0.16,1,0.3,1);
+@keyframes lxRevealIn {
+  from { opacity: 0; transform: translateY(40px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
-
-.lx-reveal.lx-in { opacity: 1; transform: translateY(0); }
-.lx-reveal-d1 { transition-delay: 0.1s; }
-.lx-reveal-d2 { transition-delay: 0.22s; }
-.lx-reveal-d3 { transition-delay: 0.34s; }
+.lx-reveal.lx-in { animation: lxRevealIn 0.9s cubic-bezier(0.16,1,0.3,1) both; }
+.lx-reveal.lx-in.lx-reveal-d1 { animation-delay: 0.1s; }
+.lx-reveal.lx-in.lx-reveal-d2 { animation-delay: 0.22s; }
+.lx-reveal.lx-in.lx-reveal-d3 { animation-delay: 0.34s; }
 `
 
 export default function LuxePage() {

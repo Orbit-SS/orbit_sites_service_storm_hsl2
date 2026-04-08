@@ -406,13 +406,11 @@ const CSS = `
 }
 
 /* REVEAL */
-.r-reveal {
-  opacity: 0;
-  transform: translateY(18px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
+@keyframes rRevealIn {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
-
-.r-reveal.r-in { opacity: 1; transform: translateY(0); }
+.r-reveal.r-in { animation: rRevealIn 0.5s ease both; }
 `
 
 const BOOT_LINES = [

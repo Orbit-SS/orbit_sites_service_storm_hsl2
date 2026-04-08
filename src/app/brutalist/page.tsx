@@ -332,16 +332,11 @@ const CSS = `
 .b-section--inv .b-svc-desc { color: #999; }
 
 /* REVEALS */
-.b-reveal {
-  opacity: 0;
-  transform: translateY(28px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
+@keyframes bRevealIn {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
-
-.b-reveal.b-in {
-  opacity: 1;
-  transform: translateY(0);
-}
+.b-reveal.b-in { animation: bRevealIn 0.6s ease both; }
 
 /* FOOTER */
 .b-footer {
