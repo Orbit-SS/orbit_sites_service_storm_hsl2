@@ -1,0 +1,256 @@
+{
+  "brand": {
+    "name": "Hoag Land Services, LLC",
+    "shortName": "HLS",
+    "industry": "Land services / construction / landscaping",
+    "tone": "Professional, rugged, reliable. Blue-collar expertise presented cleanly.",
+    "personality": ["Dependable", "Experienced", "Local", "Hardworking"]
+  },
+  "colors": {
+    "primary": {
+      "brand": "#2E7D32",
+      "description": "Forest green — used for header background, primary buttons, checkmarks, form focus rings"
+    },
+    "accent": {
+      "main": "#B66E41",
+      "description": "Warm brown/tan — used for links, accent bars, bullet points, badges, CTA buttons",
+      "hover": "#9b5533",
+      "light": "rgba(182,110,65,0.08)"
+    },
+    "background": {
+      "page": "#FFFFFF",
+      "surface": "#F4F5F7",
+      "dark": "#1F2933",
+      "footer": "#101623"
+    },
+    "text": {
+      "primary": "#2F2F2F",
+      "muted": "#6B7280",
+      "light": "#E5E7EB",
+      "faint": "#9CA3AF"
+    },
+    "supporting": {
+      "beige": "#F2E8C6",
+      "border": "#E5E7EB",
+      "error": "#B91C1C",
+      "success": "#166634"
+    },
+    "hero": {
+      "overlay": "linear-gradient(135deg, rgba(11,44,25,0.70), rgba(11,44,25,0.50))",
+      "overlayBase": "rgba(11,44,25)",
+      "textPrimary": "#FFFFFF",
+      "textSecondary": "rgba(255,255,255,0.88)"
+    },
+    "alternateAccentOptions": {
+      "setB": "#586C3D",
+      "setC": "#2F5D3A",
+      "setD": "#4B3A2A"
+    }
+  },
+  "typography": {
+    "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", sans-serif",
+    "fontStack": "System UI stack — no custom/Google font",
+    "baseLineHeight": 1.6,
+    "weights": {
+      "normal": 400,
+      "medium": 500,
+      "semibold": 600
+    },
+    "sizes": {
+      "heroTitle": { "mobile": "2rem", "tablet": "2.4rem" },
+      "sectionHeading": { "mobile": "1.75rem", "tablet": "2rem" },
+      "cardTitle": "1.05rem",
+      "body": "1rem",
+      "small": "0.95rem",
+      "xsmall": "0.9rem",
+      "xxsmall": "0.85rem",
+      "label": "0.8rem"
+    }
+  },
+  "spacing": {
+    "0": "0",
+    "1": "0.25rem",
+    "2": "0.5rem",
+    "3": "0.75rem",
+    "4": "1rem",
+    "5": "1.25rem",
+    "6": "1.5rem",
+    "8": "2rem",
+    "10": "2.5rem",
+    "12": "3rem",
+    "16": "4rem"
+  },
+  "layout": {
+    "maxWidth": "1100px",
+    "containerPadding": "0 1rem",
+    "sectionPadding": "2.5rem 0",
+    "sectionPaddingTight": "1.5rem 0",
+    "heroPadding": "3rem 0 2.5rem"
+  },
+  "shape": {
+    "radius": "10px",
+    "radiusPill": "999px"
+  },
+  "shadows": {
+    "default": "0 6px 20px rgba(0,0,0,.08)",
+    "card": "0 12px 28px rgba(0,0,0,0.08)",
+    "cardHover": "0 18px 38px rgba(0,0,0,0.12)"
+  },
+  "breakpoints": {
+    "md": "768px",
+    "lg": "1024px"
+  },
+  "components": {
+    "header": {
+      "background": "#2E7D32",
+      "textColor": "#FFFFFF",
+      "position": "sticky",
+      "zIndex": 40,
+      "boxShadow": "0 2px 6px rgba(0,0,0,0.15)",
+      "logo": { "height": "50px" }
+    },
+    "nav": {
+      "mobile": {
+        "menuBackground": "#FFFFFF",
+        "menuTextColor": "#1F2933",
+        "burgerBackground": "rgba(0,0,0,0.1)",
+        "burgerTextColor": "#FFFFFF"
+      },
+      "desktop": {
+        "linkColor": "#FFFFFF",
+        "linkHoverBackground": "rgba(255,255,255,0.14)"
+      }
+    },
+    "hero": {
+      "backgroundImage": "photos/logo_enhanced.png",
+      "backgroundOverlay": "linear-gradient(135deg, rgba(11,44,25,0.70), rgba(11,44,25,0.50))",
+      "minHeight": "70vh",
+      "textColor": "#FFFFFF"
+    },
+    "buttons": {
+      "base": {
+        "borderRadius": "999px",
+        "padding": "0.5rem 1rem",
+        "fontSize": "0.95rem",
+        "fontWeight": 500,
+        "transition": "background 0.15s ease, color 0.15s ease, border-color 0.15s ease, transform 0.1s ease"
+      },
+      "primary": {
+        "background": "#FFFFFF",
+        "color": "#2E7D32",
+        "hover": { "background": "#F2E8C6" }
+      },
+      "outline": {
+        "background": "transparent",
+        "borderColor": "#F2E8C6",
+        "color": "#F2E8C6",
+        "hover": { "background": "rgba(255,255,255,0.12)" }
+      },
+      "accent": {
+        "background": "#B66E41",
+        "color": "#FFFFFF",
+        "hover": { "background": "#9b5533" }
+      },
+      "ghost": {
+        "background": "transparent",
+        "color": "#B66E41",
+        "hover": { "background": "#F4F5F7" }
+      }
+    },
+    "cards": {
+      "base": {
+        "background": "#FFFFFF",
+        "borderRadius": "10px",
+        "boxShadow": "0 6px 20px rgba(0,0,0,.08)",
+        "padding": "1rem",
+        "border": "1px solid rgba(15,23,42,0.03)"
+      },
+      "service": {
+        "accentBar": "linear-gradient(90deg, #B66E41, rgba(182,110,65,0.20))",
+        "accentBarHeight": "6px",
+        "hoverTransform": "translateY(-3px)",
+        "hoverBorderColor": "rgba(182,110,65,0.35)",
+        "imageAspectRatio": "16/10"
+      }
+    },
+    "forms": {
+      "inputBorderRadius": "10px",
+      "inputBorder": "1px solid #E5E7EB",
+      "focusOutline": "2px solid #2E7D32",
+      "labelFontSize": "0.9rem",
+      "requiredColor": "#B66E41",
+      "textareaMinHeight": "140px"
+    },
+    "footer": {
+      "background": "#101623",
+      "textColor": "#E5E7EB",
+      "brandColor": "#FFFFFF",
+      "borderTopColor": "rgba(148,163,184,0.35)",
+      "bottomTextColor": "#9CA3AF",
+      "gridColumns": "2fr 1.5fr 1.2fr"
+    },
+    "portfolio": {
+      "gridColumns": {
+        "mobile": "1",
+        "tablet": "repeat(2, 1fr)",
+        "desktop": "repeat(3, 1fr)"
+      },
+      "collectionCard": {
+        "border": "1px solid rgba(255,255,255,0.08)",
+        "background": "rgba(0,0,0,0.2)",
+        "borderRadius": "0.75rem",
+        "accentColor": "#f5a623"
+      }
+    },
+    "lightbox": {
+      "overlayBackground": "rgba(0,0,0,0.9)",
+      "maxWidth": "900px",
+      "captionColor": "#E5E7EB"
+    },
+    "animations": {
+      "reveal": {
+        "initial": "opacity:0; transform:translateY(20px)",
+        "visible": "opacity:1; transform:translateY(0)",
+        "transition": "opacity 0.6s ease, transform 0.6s ease"
+      },
+      "imageHover": "transform:scale(1.03); transition:transform 0.25s ease"
+    }
+  },
+  "sectionStyles": {
+    "services": {
+      "background": "linear-gradient(180deg, rgba(244,245,247,0.65), rgba(255,255,255,0))",
+      "headingUnderline": { "width": "56px", "height": "3px", "color": "#B66E41" }
+    },
+    "alt": { "background": "#F4F5F7" }
+  },
+  "lists": {
+    "checkList": {
+      "marker": "✓",
+      "markerColor": "#2E7D32",
+      "markerWeight": 600
+    },
+    "cardList": {
+      "marker": "•",
+      "markerColor": "#B66E41"
+    }
+  },
+  "cssFile": "css/style.css",
+  "cssVariables": {
+    "--color-bg": "#FFFFFF",
+    "--color-text": "#2F2F2F",
+    "--color-muted": "#6B7280",
+    "--color-surface": "#F4F5F7",
+    "--color-brand": "#2E7D32",
+    "--color-accent": "#B66E41",
+    "--color-beige": "#F2E8C6",
+    "--color-dark": "#1F2933",
+    "--color-border": "#E5E7EB",
+    "--color-error": "#B91C1C",
+    "--color-success": "#166534",
+    "--font-sans": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif",
+    "--radius": "10px",
+    "--radius-pill": "999px",
+    "--shadow": "0 6px 20px rgba(0,0,0,.08)",
+    "--max-width": "1100px"
+  }
+}
